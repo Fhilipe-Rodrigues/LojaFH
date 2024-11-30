@@ -1,0 +1,27 @@
+Processador: Intel Core i5 12400 - 12 núcleos a 4,4 GHz
+
+Placa de vídeo: Asus Dual RTX 4060 - 8 GB GDDR6
+
+Memória RAM: Kingston HyperX - 16 GB (2x8), 3200 MHz, CL 16
+
+Armazenamento: 1 TB SSD Kingston NV1
+
+Fonte: Corsair CX Series CX550 - 550w, 80 plus Bronze
+
+Gabinete: Gabinete Gamer Rise Mode Galaxy Glass
+
+Preço: 4,990
+
+Processador: Intel Core i3 10100 - 8 núcles a 4,3 GHz 
+
+Placa de vídeo: Galax 1 Click OC RTX 2060 - 6 GB GDDR6
+
+Memória RAM: Corsair ValueSelect - 16 GB (2x8), 2400 MHz, CL 16
+
+Armazenamento: 1 TB SSD Kingspec NX series
+
+Fonte: Silverstone ET500 - 500w, 80 plus Bronze
+
+Gabinete: Gabinete Gamer Montech X3 Glass
+
+Preço = 2990,00

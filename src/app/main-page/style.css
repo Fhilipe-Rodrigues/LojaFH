@@ -1,0 +1,178 @@
+body {
+    display: flex;              /* Define o layout como flexbox */
+    flex-direction: column;     /* Organiza os itens de forma vertical (em coluna) */
+    justify-content: center;    /* Centraliza os itens no eixo vertical */
+    align-items: center;        /* Centraliza os itens no eixo horizontal */
+    min-height: 100vh;          /* Garante que o body ocupe toda a altura da tela */
+    background-color: rgb(33, 36, 46);
+    background-image: url('images/MainPage_background.jpg'); /* Caminho para sua imagem */
+    background-size: cover; /* Faz com que a imagem cubra toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    color: rgb(255, 255, 255); /* Garantir que o texto fique visível */
+    font-family: Arial, sans-serif; /* Fonte básica */
+}
+
+hr {
+    border: 1px solid rgb(66, 72, 92); /* Adiciona uma cor de borda ao hr para combinar com o tema */
+    width: 100%; /* Ajusta a largura do hr */
+    margin: 20px auto; /* Centraliza o hr e adiciona espaçamento */
+}
+
+img {
+    width: 35%; /* Diminuir o tamanho da imagem */
+    border-radius: 10px; /* Adiciona bordas arredondadas à imagem */
+}
+
+.DivDosLinks{
+    position: absolute;
+    left: 0%;
+    transform: translate(-0%, -0%);
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adicionar sombra opcional */
+}
+
+.Direitos-autorais {
+    align-self: flex-end; /* Alinha o texto ao final do container flex */
+    margin-right: 5%; /* Margem da direita */
+    margin-bottom: 0.5%; /* Margem da parte inferior */
+    color: rgb(66, 72, 92); /* Cor do texto */
+    text-align: right; /* Garante o alinhamento do texto à direita */
+    font-size: small; /* Define o tamanho do texto */
+}
+
+.Texto-principal{
+    color: white;
+    font-size: 7vw; /* O tamanho do texto agora é 10% da largura da tela */
+    text-align: center; /* Centraliza o texto */
+    animation: fadeInDown 1s ease-out; /*Animação de entrada */
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.highlight{
+    position: relative;
+    display: inline-block;
+    padding: 15px; /* Ajuste de padding (distância entre o conteúdo e a borda do elemento) */
+}
+
+.highlight::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(66, 72, 92);
+    z-index: -1;
+    border-radius: 5px; /* Arredondamento das bordas */
+}
+
+.Logo-sobre-nos {
+    width: 70px; /* Diminuir o tamanho da imagem */
+    margin-right: -10px;
+}
+
+.Social-icons {
+    display: inline-flex; /* Alinha os ícones horizontalmente */
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    align-items: center;
+    margin: 20px 0; /* Espaço superior e inferior para os ícones */
+}
+
+.Social-icon, .Social-icon-wpp, .Social-icon-insta {
+    font-size: 2vw; /* Tamanho do texto proporcional à largura da tela */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    margin: 0 25px; /* Mantém o espaçamento entre os links */
+}
+
+/* Media queries já aplicadas */
+@media (max-width: 1200px) {
+    .Social-icon, .Social-icon-wpp, .Social-icon-insta{
+        font-size: 1.5vw;
+    }
+
+    .Produto-button {
+        font-size: 12px; /* Ajuste de tamanho do texto no botão */
+        padding: 10px 20px; /* Ajuste de espaçamento interno */
+    }
+}
+
+@media (max-width: 768px) {
+    .Social-icon, .Social-icon-wpp, .Social-icon-insta{
+        font-size: 3vw;
+    }
+
+    .Produto-button {
+        font-size: 10px; /* Tamanho menor para o texto */
+        padding: 8px 16px; /* Menos espaço para se adequar ao tamanho da tela */
+    }
+}
+
+@media (max-width: 480px) {
+    .Social-icon, .Social-icon-wpp, .Social-icon-insta{
+        font-size: 4vw;
+    }
+    .Produto-button {
+        font-size: 8px; /* Tamanho ainda menor para telas de smartphones */
+        padding: 4px 8px; /* Menos espaçamento */
+    }
+}
+
+.Social-icon i {
+    margin-right: 1px; /* Espaço entre ícone e texto */
+}
+
+.Social-icon-wpp i {
+    margin-right: 8px; /* Espaço entre ícone e texto */
+}
+
+.Social-icon-insta i {
+    margin-right: 8px; /* Espaço entre ícone e texto */
+}
+
+.Social-icon:hover {
+    color: #10d1d8; /* Hover é para modificar a cor do ícone ao passar o mouse em cima */
+}
+
+.Social-icon-wpp:hover {
+    color: #14f10c; /* Hover é para modificar a cor do ícone ao passar o mouse em cima */
+}
+
+.Social-icon-insta:hover {
+    color: #e41084; /* Hover é para modificar a cor do ícone ao passar o mouse em cima */
+}
+
+/* BOTOES */
+/* Estilo para o botão */
+.Produto-button {
+    background: linear-gradient(45deg, #f9d423, #ff4e50); /* Gradiente dourado */
+    border: none; /* Remove a borda padrão */
+    color: black; /* Cor do texto */
+    padding: 12px 25px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito para o texto */
+    border-radius: 5px; /* Arredondar os cantos do botão */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse sobre o botão */
+    text-align: center; /* Alinhamento do texto */
+    text-transform: uppercase; /* Transformar texto em maiúsculas */
+    transition: background 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+.Produto-button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #f9d423, #ff4e50, #f9d423); /* Gradiente mais intenso no hover */
+}

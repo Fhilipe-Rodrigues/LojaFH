@@ -1,0 +1,154 @@
+body {
+    display: flex;
+    flex-direction: column; /* Coloca os elementos em coluna */
+    justify-content: space-between; /* Garante que o footer fique no final */
+    min-height: 100vh; /* Faz o body ocupar a altura da tela */
+    margin: 0; /* Remove margens padrão */
+    background: linear-gradient(to right, rgb(36, 20, 67), rgb(94, 8, 94));
+    color: rgb(255, 255, 255); /* Garantir que o texto fique visível */
+    font-family: Arial, sans-serif; /* Fonte básica */
+    overflow-y: auto; /* Ativa rolagem vertical se o conteúdo exceder */
+    overflow-x: hidden; /* Remove rolagem lateral, se não for necessária */
+}
+main {
+    flex: 1; /* Faz o conteúdo principal ocupar todo o espaço disponível */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente o conteúdo principal */
+    align-items: center; /* Centraliza horizontalmente */
+    margin-top: 100px;
+}
+
+.container{
+    display:flex;
+    flex-direction: column; 
+    width: 100%;
+    height: 100vh;
+    gap: 10%;
+    margin-bottom: 15%;
+    position: fixed;
+    flex: 1;
+    padding: 20;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    align-items: center;
+}
+
+.social{
+    display: inline-flex; /* Alinha os ícones horizontalmente */
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    align-items: center;
+    margin: 20px 0; /* Espaço superior e inferior para os ícones */
+    height: 70px;
+    margin-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adicionar sombra opcional */
+    width: 100%;
+    transform: translate(-0%, -0%);
+}
+.logo {
+    width: 60px;
+    border-radius: 10px;
+}
+.sobre, .wpp, .insta{
+    
+    font-size: 2vw; /* Tamanho do texto proporcional à largura da tela */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    align-items: center;
+    margin: 0 25px; /* Mantém o espaçamento entre os links */ 
+}
+.sobre:hover{
+    color: #10d1d8; /* Hover é para modificar a cor do ícone ao passar o mouse em cima */
+
+}
+.wpp:hover{
+    color: #14f10c;
+}
+.insta:hover{
+    color:  #e41084;
+}
+
+.produto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    max-width: 1000px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: -50px;
+}
+
+.pc{
+    width:100%;
+    border-radius: 10px;
+}
+
+.texto{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: arial;
+}
+.texto h2{
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.texto p{
+    margin-bottom: 10px;
+    color: white;
+}
+.preco{
+    font-size: 24px;
+    color: white;
+    margin-top: 25px;
+}
+.compre{
+    background: linear-gradient(45deg, #f9d423, #ff4e50);
+        border: none;
+        color: black;
+        padding: 12px 25px;
+        font-size: 16px; 
+        font-weight: bold; 
+        border-radius: 5px; 
+        cursor: pointer;
+        text-align: center;
+        text-transform: uppercase;
+        transition: background 0.3s ease;
+        text-decoration: none;
+        width: 170px;
+}
+.compre:hover{
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #f9d423, #ff4e50, #f9d423);
+}
+img{
+    border-radius: 15px;
+}
+.fotopc{
+    flex: 1;
+    padding-right: 20px;
+}
+
+footer {
+    position: relative; /* Mantém o footer no fluxo do documento */
+    width: 100%; /* Garante que ocupe toda a largura */
+    height: 45px; /* Define a altura do footer */
+    background: linear-gradient(to left, rgb(46, 30, 77), rgb(104, 18, 104)); /* Gradiente */
+    color: rgb(134, 48, 134); /* Cor do texto */
+    font-family: Arial, sans-serif;
+    font-size: smaller;
+    text-align: right; /* Alinha o texto à direita */
+    display: flex;
+    justify-content: flex-end; /* Posiciona o texto no lado direito */
+    align-items: center; /* Centraliza verticalmente o texto */
+    padding-right: 5%; /* Adiciona espaçamento no lado direito */
+    box-sizing: border-box; /* Inclui padding na largura total */
+}
+
